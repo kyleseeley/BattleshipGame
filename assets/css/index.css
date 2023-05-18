@@ -1,1 +1,30 @@
 /* Your code here */
+body {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+#board {
+  /* border: 2px solid black; */
+  display: grid;
+  grid-template-rows: repeat(9, 65px);
+  grid-template-columns: repeat(9, 65px);
+}
+
+#board > div {
+  display: flex;
+  justify-self: center;
+  border: 2px solid black;
+  height: 60px;
+  width: 60px;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+}
+
+#reset {
+  margin: 10px;
+  width: 150px;
+  height: 40px;
+}
